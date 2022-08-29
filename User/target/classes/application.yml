@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: InfyGoUserMS    
+ 
+  datasource:
+    url: jdbc:mysql://localhost:3306/infygo_user_ms
+
+server:
+  servlet.context-path: /InfyGoUserMS
+  port: 8001
+  
+logging:
+  file: Errorlog.log
+  level:
+    root: info
+    com.infy.irs: info
+  pattern:
+    file: "%d{yyyy-MM-dd HH:mm:ss,SSS} %5p [%t] %c [%M] - %m%n"
